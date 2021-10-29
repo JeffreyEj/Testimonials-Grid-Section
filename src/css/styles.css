@@ -1,0 +1,407 @@
+/* === FONT === */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&display=swap');
+
+  /* ### Primary
+
+    Moderate violet: hsl(263, 55%, 52%)
+    Very dark grayish blue: hsl(217, 19%, 35%)
+    Very dark blackish blue: hsl(219, 29%, 14%)
+    White: hsl(0, 0%, 100%)
+
+    ### Neutral
+
+    Light gray: hsl(0, 0%, 81%)
+    Light grayish blue: hsl(210, 46%, 95%) */
+
+  /* === GENERAL === */
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      background-color: hsl(210, 46%, 95%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+  }
+
+  /* === GRID-SYSTEM === */
+
+  main {
+    
+     display: grid;
+     grid-template-columns: 270px 270px 270px 270px;
+     grid-template-rows: 280px 280px;
+     grid-gap: 1.5rem;
+     max-width: 87%;
+     max-height: 650px;
+ } 
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: hsl(263, 55%, 52%);
+        border-radius: 1rem;
+        
+    } 
+
+    .box2 {
+        background-color: hsl(217, 19%, 35%);
+        border-radius: 1rem;
+    }
+
+    .box3 {
+        grid-row-start: 2;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+    }
+
+    .box4 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: hsl(219, 29%, 14%);
+        border-radius: 1rem;
+    }
+    .box5 {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+    }
+
+    .quotation {
+        position: relative;
+        left: 25rem;
+    }
+
+    /* === Daniel Clifford === */
+
+    .image-container {
+        display: flex;
+        padding-left: 2rem;
+        position: relative;
+        bottom: 5rem;
+        
+    }
+
+    .image-container > img {
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        width: 30px;
+        height: auto;
+    }
+
+    .name {
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: .5rem;
+    }
+
+    .name h3 {
+        opacity: 0.3;
+        font-size: .6rem;
+    }
+
+    .text-container{
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        position: relative;
+        bottom: 4rem;
+    }
+
+    .text-container .quote {
+        margin-top: .6rem;
+        opacity: 0.4;
+        font-size: 12px;
+        padding-right: 1.2rem;
+    }
+
+    /* === Jonathan Walters === */
+
+    .image-container2 {
+        display: flex;
+        position: relative;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .image-container2 > img {
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        width: 30px;
+        height: auto;
+    }
+
+    .name2 {
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: .4rem;
+    }
+
+    .name2 h3 {
+        opacity: 0.3;
+        font-size: .7rem;
+    }
+
+    .text-container2{
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        position: relative;
+        top: 2.5rem;
+        padding-right: 1rem;
+        
+    }
+
+    .text-container2 .quote {
+        margin-top: 0.6rem;
+        opacity: 0.4;
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    /* === Jeanette Harmon === */
+
+    .image-container3 {
+        display: flex;
+        position: relative;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .image-container3 > img {
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        width: 30px;
+        height: auto;
+    }
+
+    .name3 {
+        padding-left: 1.5rem;
+        color: hsl(217, 19%, 35%);
+        font-size: .4rem;
+    }
+
+    .name3 h3 {
+        opacity: 0.3;
+        font-size: .7rem;
+    }
+
+    .text-container3{
+        padding-left: 1.5rem;
+        color: hsl(217, 19%, 35%);
+        font-weight: bold;
+        font-size: 1.2rem;
+        position: relative;
+        top: 2.5rem;
+        padding-right: 1rem;
+        
+    }
+
+    .text-container3 .quote {
+        margin-top: 2.5rem;
+        opacity: 0.4;
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    /* === Patrick Abrams === */
+
+    .image-container4 {
+        display: flex;
+        position: relative;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .image-container4 > img {
+        border-radius: 50%;
+        border: 1px solid hsl(263, 55%, 52%);
+        width: 30px;
+        height: auto;
+    }
+
+    .name4 {
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: .4rem;
+    }
+
+    .name4 h3 {
+        opacity: 0.3;
+        font-size: .7rem;
+    }
+
+    .text-container4{
+        padding-left: 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        position: relative;
+        top: 2.5rem;
+        padding-right: 1rem;
+        
+    }
+
+    .text-container4 .quote {
+        margin-top: 2.5rem;
+        opacity: 0.4;
+        font-size: 12px;
+        padding-right: .4rem;
+    }
+
+    /* === Kira Whittle === */
+
+    .image-container5 {
+        display: flex;
+        position: relative;
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .image-container5 > img {
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        width: 30px;
+        height: auto;
+    }
+
+    .name5 {
+        padding-left: 1.5rem;
+        color: hsl(217, 19%, 35%);
+        font-size: .4rem;
+    }
+
+    .name5 h3 {
+        opacity: 0.3;
+        font-size: .7rem;
+    }
+
+    .text-container5{
+        padding-left: 1.5rem;
+        color: hsl(217, 19%, 35%);
+        font-weight: bold;
+        font-size: 1.2rem;
+        position: relative;
+        top: 2.5rem;
+        padding-right: 1rem;
+        
+    }
+
+    .text-container5 .quote {
+        margin-top: 2.5rem;
+        opacity: 0.4;
+        font-size: 12px;
+        padding-right: 2rem;
+    }
+
+    /* === RESPONSIVNESS === */
+
+    @media (max-width: 375px) {
+        body {
+            display: block;
+            min-height: auto;
+            
+        }
+        main {
+            display: grid;
+            grid-template-columns: 320px 270px;
+            grid-template-rows: 180px 270px 230px 270px 270px 180px 600px 200px;
+            grid-gap: 1.5rem;
+            max-width: 87%;
+            margin-left: 1.5rem;
+        } 
+
+        .quotation {
+            position: relative;
+            left: 13rem;
+        }
+
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: hsl(263, 55%, 52%);
+            border-radius: 1rem;
+            padding-right: 1rem;
+            padding-top: .4rem;  
+        } 
+    
+        .box2 {
+            background-color: hsl(217, 19%, 35%);
+            grid-row-start: 3;
+            border-radius: 1rem;
+        }
+    
+        .box3 {
+            grid-row-start: 4;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 1rem;
+        }
+    
+        .box4 {
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            background-color: hsl(219, 29%, 14%);
+            border-radius: 1rem;
+        }
+        
+        .box5 {
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 1rem;
+            grid-row-start: 7;
+            grid-row-end: 7;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+
+
+ /* Second easier one */
+
+ /* main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45rem 20rem;
+    grid-template-rows: 300px 20rem;
+    grid-template-areas: 
+    "box1 box2" 
+    "box3 box4";    
+    grid-gap: 2rem;
+}
+
+.box1 {
+    grid-area: box1;
+    border-radius: 1rem;
+}
+
+.box2 {
+    grid-area: box2;
+    border-radius: 1rem;
+
+}
+
+.box3 {
+    grid-area: box3;
+    border-radius: 1rem;
+}
+
+.box4 {
+    grid-area: box4;
+    border-radius: 1rem;
+    background-color: purple;
+} */
