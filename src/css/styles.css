@@ -308,7 +308,7 @@
 
     /* === RESPONSIVNESS === */
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         body {
             display: block;
             min-height: auto;
@@ -316,11 +316,12 @@
         }
         main {
             display: grid;
-            grid-template-columns: 320px 270px;
+            grid-template-columns: 320px 5px;
             grid-template-rows: 180px 270px 230px 270px 270px 180px 600px 200px;
             grid-gap: 1.5rem;
-            max-width: 87%;
-            margin-left: 1.7rem;
+            max-width: 325px;
+            margin-right: auto;
+            margin-left: auto;
         } 
 
         .quotation {
